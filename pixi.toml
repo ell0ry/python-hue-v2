@@ -1,0 +1,21 @@
+[package]
+name = "python-hue-v2"
+description = 'A python library to control the Philips Hue lighting system.'
+version = "0.1.0"
+authors = ["Yichen Zhao njuzhaoyichen@gmail.com"]
+
+[package.build.backend]
+name = "pixi-build-python"
+version = ">=0.4.1"
+
+[package.build-dependencies]
+python = "3.12.*"
+hatchling = "==1.26.3"
+
+[package.host-dependencies]
+hatchling = "==1.26.3"
+python = "3.12.*"
+
+[package.run-dependencies]
+requests = ">=2.32.5,<3"
+zeroconf = ">=1.0.0,<2"
